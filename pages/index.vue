@@ -75,3 +75,17 @@
     </v-col>
   </v-row>
 </template>
+<script>
+export default {
+  name: 'Index',
+  asyncData () {
+    return {
+      rendering: process.server ? 'server' : 'client'
+    }
+  }
+}
+</script>
+<style lang="scss">
+@import '~/assets/scss/pages/board'
+
+</style>
